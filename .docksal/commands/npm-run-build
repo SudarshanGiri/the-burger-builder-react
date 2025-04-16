@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+## Start the client(React) server
+fin exec "cd /var/www; npm run build"
+
+

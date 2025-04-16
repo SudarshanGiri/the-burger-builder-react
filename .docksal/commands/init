@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## start the project, install the project dependencies
+fin project start
+fin exec nvm install 18.17.1
+# Set the node default version
+fin exec nvm alias default 18.17.1
+
+# Install Client packages
+fin exec "cd /var/www/client; npm install"
+
+# Install Server packages
+fin exec "cd /var/www/server; npm install"
